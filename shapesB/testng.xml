@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+    <test name="Entity">
+        <classes>
+            <class name="by.victor.geometry.entity.PointTest"/>
+            <class name="by.victor.geometry.entity.TetrahedronTest"/>
+        </classes>
+    </test>
+    <test name="ValueValidation">
+        <classes>
+            <class name="by.victor.geometry.validation.ValueValidatorTest"/>
+            <class name="by.victor.geometry.validation.StringValidationTest"/>
+        </classes>
+    </test>
+    <test name="ReaderTest">
+        <classes>
+            <class name="by.victor.geometry.reader.TetrahedronReaderTest"/>
+        </classes>
+    </test>
+    <test name="ParserTest">
+        <classes>
+            <class name="by.victor.geometry.parser.ParserTest"/>
+        </classes>
+    </test>
+    <test name="ActionTest">
+        <classes>
+            <class name="by.victor.geometry.action.DefineTest"/>
+            <class name="by.victor.geometry.action.CutTest"/>
+        </classes>
+    </test>
+    <test name="Repository">
+        <classes>
+            <class name="by.victor.geometry.repository.RepositoryTest"/>
+        </classes>
+    </test>
+</suite>

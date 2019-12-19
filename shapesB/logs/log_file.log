@@ -1,0 +1,258 @@
+2019-11-17 22:59:10 ERROR StringValidator:50 - bad id -7
+2019-11-17 22:59:10 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 22:59:10 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 22:59:10 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 22:59:10 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-17 22:59:10 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 22:59:10 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 22:59:10 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 22:59:10 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:00:38 ERROR StringValidator:50 - bad id -7
+2019-11-17 23:00:38 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:00:38 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:00:38 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:00:38 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-17 23:00:38 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:00:38 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:00:38 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:00:38 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:19 ERROR StringValidator:50 - bad id -7
+2019-11-17 23:01:19 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:19 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:19 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:19 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-17 23:01:19 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:19 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:19 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:19 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:40 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:40 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:40 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-17 23:01:40 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:40 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:01:40 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:01:40 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:02:06 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:02:06 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:02:06 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-17 23:02:06 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:02:06 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-17 23:02:06 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-17 23:02:06 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-18 08:40:35 ERROR StringValidator:50 - bad id -7
+2019-11-18 08:40:35 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:40:35 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:40:35 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-18 08:40:35 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-18 08:40:35 INFO  StringValidator:48 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:40:35 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-18 08:40:35 INFO  StringValidator:48 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:40:35 ERROR TetrahedronFactory:12 - Create tetrahedron id:7
+2019-11-18 08:50:20 ERROR StringValidator:52 - bad id -7
+2019-11-18 08:50:20 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:50:20 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:50:20 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 08:50:20 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-18 08:50:20 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:50:20 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 08:50:20 INFO  StringValidator:50 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 08:50:20 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:21:54 ERROR StringValidator:52 - bad id -7
+2019-11-18 09:21:54 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:21:54 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:21:54 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:21:54 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-18 09:21:54 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:21:54 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:21:54 INFO  StringValidator:50 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:21:54 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:27:38 ERROR StringValidator:52 - bad id -7
+2019-11-18 09:27:38 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:27:38 ERROR TetrahedronReader:27 - File problem \data\dta.txt
+2019-11-18 09:27:38 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:27:38 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:27:38 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 2.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :false
+2019-11-18 09:27:38 INFO  StringValidator:50 - Tetrahedron:7 2.0 1.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:27:38 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:27:38 INFO  StringValidator:50 - Tetrahedron:7 3.0 4.0 2.0 0.0 1.0 1.0 2.0 1.0 1.0 2.0 2.0 1.0 isCorrect :true
+2019-11-18 09:27:38 ERROR TetrahedronFactory:13 - Create tetrahedron id:7
+2019-11-18 09:28:25 ERROR TetrahedronReader:27 - File problem \data\dta.txt
+2019-11-18 10:21:20 ERROR TetrahedronReader:28 - File problem data.txt
+2019-11-18 10:21:40 ERROR TetrahedronReader:28 - File problem test//data.txt
+2019-11-18 10:22:00 ERROR TetrahedronReader:28 - File problem test\data.txt
+2019-11-21 00:52:29 ERROR TetrahedronFactory:13 - Create tetrahedron id:1
+2019-11-21 00:56:36 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 00:57:40 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 00:59:14 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:07:52 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:07:52 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:07:52 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 01:08:49 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:08:49 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:08:49 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 01:09:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:09:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:09:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 01:10:40 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:10:40 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:10:40 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 01:10:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:10:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:10:58 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 01:11:24 ERROR TetrahedronFactory:16 - Create tetrahedron id:1
+2019-11-21 01:11:24 ERROR TetrahedronFactory:16 - Create tetrahedron id:2
+2019-11-21 01:11:24 ERROR TetrahedronFactory:16 - Create tetrahedron id:3
+2019-11-21 08:46:31 INFO  StringValidator:26 - Tetrahedron:-7 isCorrect :true
+2019-11-21 08:46:31 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:46:31 ERROR TetrahedronReader:28 - File problem \data\dta.txt
+2019-11-21 08:46:31 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:46:31 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:47:35 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:47:58 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:48:23 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:49:32 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:50:27 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:50:30 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:50:30 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:52:23 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:52:23 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:56:15 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:-7 isCorrect :true
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 08:57:05 ERROR TetrahedronReader:28 - File problem \data\dta.txt
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 08:57:05 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 08:57:57 INFO  StringValidator:26 - Tetrahedron:-7 isCorrect :true
+2019-11-21 08:59:40 INFO  StringValidator:26 - Tetrahedron:-7 isCorrect :true
+2019-11-21 08:59:56 INFO  StringValidator:26 - Tetrahedron:-7a isCorrect :false
+2019-11-21 09:00:12 INFO  StringValidator:26 - Tetrahedron:-7a isCorrect :false
+2019-11-21 09:00:12 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:-7a isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:01:26 ERROR TetrahedronReader:28 - File problem \data\dta.txt
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:01:26 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:29 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:0.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:2.0 isCorrect :false
+2019-11-21 09:02:59 INFO  StringValidator:26 - Tetrahedron:1.0 isCorrect :false
+2019-11-21 09:06:12 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:06:12 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:18:42 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:20:21 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:24:55 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:24:55 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:26:54 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:28:53 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:29:24 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:29:55 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:32:47 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:33:18 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:33:21 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:33:21 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:41 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:41 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:41 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:41 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:-7a isCorrect :false
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:51 ERROR TetrahedronReader:28 - File problem \data\dta.txt
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :true
+2019-11-21 09:36:51 INFO  StringValidator:26 - Tetrahedron:7 isCorrect :false

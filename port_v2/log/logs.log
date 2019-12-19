@@ -1,0 +1,31 @@
+
+18:11:39.035 [pool-2-thread-1] TRACE by.vadim.shipyard.dock.ShipsProcessor - Started processing: Ship{name='Ship 0', maxVolume=11, needsLoad=false, currentVolume=5}
+18:11:39.037 [pool-2-thread-3] TRACE by.vadim.shipyard.dock.ShipsProcessor - Started processing: Ship{name='Ship 2', maxVolume=19, needsLoad=false, currentVolume=9}
+18:11:39.036 [pool-2-thread-2] TRACE by.vadim.shipyard.dock.ShipsProcessor - Started processing: Ship{name='Ship 1', maxVolume=27, needsLoad=true, currentVolume=13}
+18:11:39.637 [pool-2-thread-2] TRACE by.vadim.shipyard.dock.ShipsProcessor - Processing complete: Ship{name='Ship 1', maxVolume=27, needsLoad=true, currentVolume=13}
+18:11:39.637 [pool-2-thread-2] TRACE by.vadim.shipyard.dock.ShipsProcessor - Started processing: Ship{name='Ship 3', maxVolume=27, needsLoad=true, currentVolume=13}
+18:11:39.729 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 0', maxVolume=11, needsLoad=false, currentVolume=4}
+18:11:40.048 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 2', maxVolume=19, needsLoad=false, currentVolume=8}
+18:11:40.187 [pool-2-thread-2] TRACE by.vadim.shipyard.dock.ShipsProcessor - Processing complete: Ship{name='Ship 3', maxVolume=27, needsLoad=true, currentVolume=13}
+18:11:40.187 [pool-2-thread-2] TRACE by.vadim.shipyard.dock.ShipsProcessor - Started processing: Ship{name='Ship 4', maxVolume=64, needsLoad=false, currentVolume=32}
+18:11:40.674 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 4', maxVolume=64, needsLoad=false, currentVolume=31}
+18:11:41.005 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 1
+18:11:41.485 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 0', maxVolume=11, needsLoad=false, currentVolume=3}
+18:11:42.137 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 2
+18:11:42.923 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 3
+18:11:43.554 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 2', maxVolume=19, needsLoad=false, currentVolume=7}
+18:11:43.779 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 4', maxVolume=64, needsLoad=false, currentVolume=30}
+18:11:44.665 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 4
+18:11:45.906 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 0', maxVolume=11, needsLoad=false, currentVolume=2}
+18:11:46.064 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 5
+18:11:46.094 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 6
+18:11:46.298 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 2', maxVolume=19, needsLoad=false, currentVolume=6}
+18:11:46.998 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 7
+18:11:47.083 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 4', maxVolume=64, needsLoad=false, currentVolume=29}
+18:11:47.898 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 8
+18:11:48.148 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 0', maxVolume=11, needsLoad=false, currentVolume=1}
+18:11:48.166 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 9
+18:11:48.356 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 2', maxVolume=19, needsLoad=false, currentVolume=5}
+18:11:48.810 [pool-2-thread-2] TRACE by.vadim.shipyard.storage.Ship - Unloaded: Ship{name='Ship 4', maxVolume=64, needsLoad=false, currentVolume=28}
+18:11:48.887 [pool-2-thread-1] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 10
+18:11:49.567 [pool-2-thread-3] TRACE by.vadim.shipyard.storage.Storage - Storage volume: 11
