@@ -1,0 +1,44 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name = "candies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "candy" maxOccurs = "unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name = "candy">
+        <xs:sequence maxOccurs="1">
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="energy" type="xs:integer" />
+            <xs:element name="ingredients">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="water" type="xs:integer" />
+                        <xs:element name="sugar" type="xs:integer"/>
+                        <xs:element name="fructose" type="xs:integer" />
+                        <xs:element name="vanillin" type="xs:integer" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="value">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="proteins" type="xs:integer"/>
+                        <xs:element name="fats" type="xs:integer"/>
+                        <xs:element name="carbohydrates" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name = "type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="карамельная"/>
+                    <xs:enumeration value="шоколадная с начинкой"/>
+                    <xs:enumeration value="шоколадная без начинки"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>

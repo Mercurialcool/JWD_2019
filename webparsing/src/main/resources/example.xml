@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<candies xmlns:s="https://www.w3schools.com/sweets" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.w3schools.com/sweets ">
+ <candy type="шоколадная с начинкой">
+  <name>Красная Шапочка</name>
+  <energy>538</energy>
+  <ingredients>
+   <water>10</water>
+   <sugar>25</sugar>
+   <fructose>11</fructose>
+   <vanillin>2</vanillin>
+   <chocolate>молочный</chocolate>
+  </ingredients>
+  <value>
+   <proteins>6.6</proteins>
+   <fats>30.9</fats>
+   <carbohydrates>58.3</carbohydrates>
+  </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Аленка</name>
+  <energy>535</energy>
+  <ingredients>
+   <water>12</water>
+   <sugar>23</sugar>
+   <fructose>10</fructose>
+   <vanillin>3</vanillin>
+   <chocolate>темный</chocolate>
+  </ingredients>
+     <value>
+         <proteins>7.8</proteins>
+         <fats>35.7</fats>
+         <carbohydrates>51.5</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Грильяж</name>
+  <energy>503</energy>
+  <ingredients>
+   <water>9</water>
+   <sugar>22</sugar>
+   <fructose>11</fructose>
+   <vanillin>5</vanillin>
+   <chocolate>молочный</chocolate>
+  </ingredients>
+     <value>
+         <proteins>8.1</proteins>
+         <fats>25.2</fats>
+         <carbohydrates>61.2</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="шоколадная без начинки">
+  <name>Минчанка</name>
+  <energy>465</energy>
+  <ingredients>
+   <water>9</water>
+   <sugar>19</sugar>
+   <fructose>23</fructose>
+   <vanillin>6</vanillin>
+   <chocolate>молочный</chocolate>
+  </ingredients>
+     <value>
+         <proteins>4.4</proteins>
+         <fats>20.9</fats>
+         <carbohydrates>62.2</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Зубастики</name>
+  <energy>390</energy>
+  <ingredients>
+   <water>12</water>
+   <sugar>23</sugar>
+   <fructose>11</fructose>
+   <vanillin>4</vanillin>
+  </ingredients>
+     <value>
+         <proteins>0</proteins>
+         <fats>0.1</fats>
+         <carbohydrates>98</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Леденец вкус барбариса</name>
+  <energy>393</energy>
+  <ingredients>
+   <water>10</water>
+   <sugar>30</sugar>
+   <fructose>40</fructose>
+   <vanillin>2</vanillin>
+  </ingredients>
+     <value>
+         <proteins>0</proteins>
+         <fats>0.1</fats>
+         <carbohydrates>97.4</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Тоффетка</name>
+  <energy>449</energy>
+  <ingredients>
+   <water>12</water>
+   <sugar>22</sugar>
+   <fructose>43</fructose>
+   <vanillin>22</vanillin>
+   <chocolate>темный</chocolate>
+  </ingredients>
+     <value>
+         <proteins>3.9</proteins>
+         <fats>16.9</fats>
+         <carbohydrates>70.1</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Шоколадные Башмачки</name>
+  <energy>438</energy>
+  <ingredients>
+   <water>11</water>
+   <sugar>21</sugar>
+   <fructose>3</fructose>
+   <vanillin>22</vanillin>
+  </ingredients>
+     <value>
+         <proteins>5.1</proteins>
+         <fats>38.4</fats>
+         <carbohydrates>51.6</carbohydrates>
+     </value>
+  <production>Коммунарка</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Лимонный хит</name>
+  <energy>438</energy>
+  <ingredients>
+   <water>11</water>
+   <sugar>10</sugar>
+   <fructose>22.2</fructose>
+   <vanillin>3</vanillin>
+  </ingredients>
+     <value>
+         <proteins>0</proteins>
+         <fats>0.35</fats>
+         <carbohydrates>94.2</carbohydrates>
+     </value>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Прометей</name>
+  <energy>438</energy>
+  <ingredients>
+   <water>100</water>
+   <sugar>100</sugar>
+   <fructose>100.0</fructose>
+   <vanillin>100</vanillin>
+  </ingredients>
+     <value>
+         <proteins>16.3</proteins>
+         <fats>36.2</fats>
+         <carbohydrates>37.9</carbohydrates>
+     </value>
+     <chocolate>молочный</chocolate>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="шоколадная без начинки">
+  <name>Bon Journee milk</name>
+  <energy>550</energy>
+  <ingredients>
+   <water>22</water>
+   <sugar>3</sugar>
+   <fructose>11</fructose>
+   <vanillin>8</vanillin>
+  </ingredients>
+     <value>
+         <proteins>6.5</proteins>
+         <fats>36</fats>
+         <carbohydrates>49</carbohydrates>
+     </value>
+     <chocolate>молочный</chocolate>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Тоффи</name>
+  <energy>470</energy>
+  <ingredients>
+   <water>12</water>
+   <sugar>10</sugar>
+   <fructose>33</fructose>
+   <vanillin>1</vanillin>
+  </ingredients>
+     <value>
+         <proteins>7.5</proteins>
+         <fats>25</fats>
+         <carbohydrates>56</carbohydrates>
+     </value>
+     <chocolate>молочный</chocolate>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Аэрофлоцкие</name>
+  <energy>543</energy>
+  <ingredients>
+   <water>10</water>
+   <sugar>10</sugar>
+   <fructose>10</fructose>
+   <vanillin>10</vanillin>
+  </ingredients>
+     <value>
+         <proteins>3.9</proteins>
+         <fats>33.7</fats>
+         <carbohydrates>58</carbohydrates>
+     </value>
+     <chocolate>темный</chocolate>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="шоколадная с начинкой">
+  <name>Полесье</name>
+  <energy>406</energy>
+  <ingredients>
+   <water>22</water>
+   <sugar>13</sugar>
+   <fructose>15</fructose>
+   <vanillin>5</vanillin>
+  </ingredients>
+     <value>
+         <proteins>3.3</proteins>
+         <fats>12.6</fats>
+         <carbohydrates>72.15</carbohydrates>
+     </value>
+     <chocolate>молочный</chocolate>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Яблочный хит</name>
+  <energy>367</energy>
+  <ingredients>
+   <water>1</water>
+   <sugar>13</sugar>
+   <fructose>22</fructose>
+   <vanillin>8</vanillin>
+  </ingredients>
+     <value>
+         <proteins>0</proteins>
+         <fats>0.2</fats>
+         <carbohydrates>94.6</carbohydrates>
+     </value>
+  <production>Спартак</production>
+ </candy>
+
+ <candy type="карамельная">
+  <name>Вишневый хит</name>
+  <energy>367</energy>
+  <ingredients>
+   <water>1</water>
+   <sugar>13</sugar>
+   <fructose>22</fructose>
+   <vanillin>9</vanillin>
+  </ingredients>
+     <value>
+         <proteins>0</proteins>
+         <fats>0.2</fats>
+         <carbohydrates>94.7</carbohydrates>
+     </value>
+     <chocolate>молочный</chocolate>
+  <production>Спартак</production>
+ </candy>
+</candies>
