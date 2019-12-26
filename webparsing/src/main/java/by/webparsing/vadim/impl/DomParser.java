@@ -1,11 +1,12 @@
-package by.webparsing.vadim.parsers;
+package by.webparsing.vadim.impl;
 
-import by.webparsing.vadim.builder.CandyBuilder;
+import by.webparsing.vadim.creator.CandyCreator;
 import by.webparsing.vadim.entity.Candy;
 
 import by.webparsing.vadim.entity.CaramelCandy;
 import by.webparsing.vadim.entity.NotStuffedChocolateCandy;
 import by.webparsing.vadim.entity.StuffedChocolateCandy;
+import by.webparsing.vadim.parser.Parser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,9 +19,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DomParser extends CandyBuilder implements Parser  {
+public class DomParser extends CandyCreator implements Parser {
 
-    private final Logger logger = LogManager.getLogger();
+    private final static Logger logger = LogManager.getLogger();
 
     private List<Candy> candies = new ArrayList<>();
     private Element eElement;
@@ -46,9 +47,8 @@ public class DomParser extends CandyBuilder implements Parser  {
                     candies.add(getCandy());
                 }
             }
-
         } catch (Exception e){
-           logger.error(e.toString());
+           logger.error(e);
         }
         return candies;
     }

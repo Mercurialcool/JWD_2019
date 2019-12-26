@@ -1,4 +1,8 @@
-package by.webparsing.vadim.parsers;
+package by.webparsing.vadim.parser;
+
+import by.webparsing.vadim.impl.DomParser;
+import by.webparsing.vadim.impl.SaxParser;
+import by.webparsing.vadim.impl.StaxParser;
 
 public class ParserFactory {
 

@@ -1,4 +1,4 @@
-package by.webparsing.vadim.parsers;
+package by.webparsing.vadim.parser;
 
 import by.webparsing.vadim.entity.Candy;
 import org.xml.sax.SAXException;

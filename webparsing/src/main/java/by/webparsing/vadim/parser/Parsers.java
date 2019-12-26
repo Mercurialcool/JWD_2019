@@ -1,4 +1,4 @@
-package by.webparsing.vadim.parsers;
+package by.webparsing.vadim.parser;
 
 public enum Parsers {
     DOM("DOM"),

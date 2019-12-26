@@ -29,9 +29,9 @@
             <td style="text-align:center">${sweet.sugarAmount}</td>
             <td style="text-align:center">${sweet.fructoseAmount}</td>
             <td style="text-align:center">${sweet.vanillinAmount}</td>
-            <td style="text-align: center">${sweet.proteins}</td>
-            <td style="text-align: center">${sweet.fats}</td>
-            <td style="text-align: center">${sweet.carbohydrates}</td>
+            <td style="text-align:center">${sweet.proteins}</td>
+            <td style="text-align:center">${sweet.fats}</td>
+            <td style="text-align:center">${sweet.carbohydrates}</td>
             <td style="text-align:center">${sweet.production}</td>
             <td style="text-align:center">${sweet.chocolateType}</td>
         </tr>

@@ -16,11 +16,11 @@ import java.io.InputStream;
 
 public class XmlValidator {
 
-    private final Logger logger = LogManager.getLogger();
+    private final static Logger logger = LogManager.getLogger();
 
     public boolean validate(InputStream file){
         logger.info("Validating xml");
-        File xsd = new File("E:/webparsingapp/src/main/resources/schema.xsd");
+        File xsd = new File("schema.xsd");
         Source xmlFile = new StreamSource(file);
         SchemaFactory schemaFactory = SchemaFactory
                 .newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
@@ -30,7 +30,7 @@ public class XmlValidator {
             validator.validate(xmlFile);
             return true;
         } catch (IOException | SAXException e){
-            logger.error(e.toString());
+            logger.error(e);
             return false;
         }
     }

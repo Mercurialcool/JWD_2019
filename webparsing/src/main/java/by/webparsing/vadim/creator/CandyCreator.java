@@ -1,8 +1,8 @@
-package by.webparsing.vadim.builder;
+package by.webparsing.vadim.creator;
 
 import by.webparsing.vadim.entity.Candy;
 
-public abstract class CandyBuilder {
+public abstract class CandyCreator {
     protected Candy candy;
 
     protected Candy getCandy(){

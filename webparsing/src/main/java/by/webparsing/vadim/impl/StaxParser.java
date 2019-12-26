@@ -1,10 +1,11 @@
-package by.webparsing.vadim.parsers;
+package by.webparsing.vadim.impl;
 
-import by.webparsing.vadim.builder.CandyBuilder;
+import by.webparsing.vadim.creator.CandyCreator;
 import by.webparsing.vadim.entity.Candy;
 import by.webparsing.vadim.entity.CaramelCandy;
 import by.webparsing.vadim.entity.NotStuffedChocolateCandy;
 import by.webparsing.vadim.entity.StuffedChocolateCandy;
+import by.webparsing.vadim.parser.Parser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,9 +23,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class StaxParser extends CandyBuilder implements Parser {
+public class StaxParser extends CandyCreator implements Parser {
 
-    private final Logger logger = LogManager.getLogger();
+    private final static Logger logger = LogManager.getLogger();
 
     private List<Candy> candies = new ArrayList<>();
     private StringBuilder currentString = null;

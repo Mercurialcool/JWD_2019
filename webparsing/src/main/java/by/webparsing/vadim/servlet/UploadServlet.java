@@ -2,8 +2,8 @@ package by.webparsing.vadim.servlet;
 
 
 import by.webparsing.vadim.exception.ParserNotFoundException;
-import by.webparsing.vadim.parsers.Parser;
-import by.webparsing.vadim.parsers.ParserFactory;
+import by.webparsing.vadim.parser.Parser;
+import by.webparsing.vadim.parser.ParserFactory;
 import by.webparsing.vadim.validator.XmlValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

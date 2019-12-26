@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<candies xmlns:s="https://www.w3schools.com/sweets" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://www.w3schools.com/sweets ">
+<candies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.w3schools.com/sweets "
+         xmlns="https://www.w3schools.com/sweets">
  <candy type="шоколадная с начинкой">
   <name>Красная Шапочка</name>
   <energy>538</energy>
