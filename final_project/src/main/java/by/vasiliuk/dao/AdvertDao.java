@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AdvertDao {
-    List<Advert> getAll();
-    Optional<Advert> getById(long id);
+    List<Advert> findAll();
+    Optional<Advert> findById(long id);
     void save(String advertTitle, String advertText, long userId);
-    List<Advert> getBySectionId(long id);
+    List<Advert> findBySectionId(long id);
 }

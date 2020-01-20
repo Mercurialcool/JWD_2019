@@ -17,17 +17,17 @@ public class AdvertService {
 
     public List<Advert> getAllAds(){
         AdvertDao advertDao = AdvertDaoImpl.getInstance();
-        return advertDao.getAll();
+        return advertDao.findAll();
     }
 
     public Optional<Advert> getAdById(long id){
         AdvertDao advertDao = AdvertDaoImpl.getInstance();
-        return advertDao.getById(id);
+        return advertDao.findById(id);
     }
 
     public List<Advert> getBySectionId(long id){
         AdvertDao advertDao = AdvertDaoImpl.getInstance();
-        return advertDao.getBySectionId(id);
+        return advertDao.findBySectionId(id);
     }
 
     public void saveAdvert(String title, String text, long userId){

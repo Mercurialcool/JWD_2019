@@ -16,12 +16,12 @@ public class UserService {
 
     public String logInUser(String username){
         UserDao userDao = UserDaoImpl.getInstance();
-        return userDao.getPassByUserName(username);
+        return userDao.findPassByUserName(username);
     }
 
     public long getUserId(String username){
         UserDao userDao = UserDaoImpl.getInstance();
-        return userDao.getIdByUsername(username);
+        return userDao.findIdByUsername(username);
     }
 
     public void registerUser(String username, String pass, int averageRating){
@@ -31,12 +31,12 @@ public class UserService {
 
     public Optional<User> getUser(long id){
         UserDao userDao = new UserDaoImpl();
-        return userDao.getById(id);
+        return userDao.findById(id);
     }
 
     public Optional<String> getUsernameById(long id){
         UserDao userDao = UserDaoImpl.getInstance();
-        Optional<User> user = userDao.getById(id);
+        Optional<User> user = userDao.findById(id);
         return user.map(User::getUsername);
     }
 }

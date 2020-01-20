@@ -1,5 +1,7 @@
 package main.java.by.vasiliuk.model;
 
+import java.util.Objects;
+
 public class User {
     private long id;
     private String username;
@@ -33,5 +35,29 @@ public class User {
         this.id = id;
         this.username = username;
         this.rating = rating;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                rating == user.rating &&
+                Objects.equals(username, user.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, username, rating);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", rating=" + rating +
+                '}';
     }
 }

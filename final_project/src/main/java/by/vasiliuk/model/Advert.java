@@ -1,5 +1,7 @@
 package main.java.by.vasiliuk.model;
 
+import java.util.Objects;
+
 public class Advert {
 
     private long id;
@@ -44,5 +46,31 @@ public class Advert {
         this.text = text;
         this.title = title;
         this.userId = userId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Advert advert = (Advert) o;
+        return id == advert.id &&
+                userId == advert.userId &&
+                Objects.equals(text, advert.text) &&
+                Objects.equals(title, advert.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, text, title, userId);
+    }
+
+    @Override
+    public String toString() {
+        return "Advert{" +
+                "id=" + id +
+                ", text='" + text + '\'' +
+                ", title='" + title + '\'' +
+                ", userId=" + userId +
+                '}';
     }
 }

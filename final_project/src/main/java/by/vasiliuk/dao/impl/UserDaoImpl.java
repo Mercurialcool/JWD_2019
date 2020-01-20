@@ -15,23 +15,34 @@ public class UserDaoImpl implements UserDao {
 
     private static final UserDaoImpl INSTANCE = new UserDaoImpl();
 
+    private static final String USER_ID = "userId";
+    private static final String USER_NAME = "userName";
+    private static final String USER_RATING = "userAverageRating";
+    private static final String USER_PASS = "userPass";
+
+    private static final String SQL_FIND_BY_ID = "SELECT userId, userName, userAverageRating FROM users WHERE userId = ?";
+    private static final String SQL_FIND_PASS_BY_USER_NAME = "SELECT userPass, userId FROM users WHERE userName = ?";
+    private static final String SQL_FIND_BY_USER_NAME = "SELECT FROM users userId WHERE username = ?";
+    private static final String SQL_SAVE = "INSERT INTO users (userName, userPass, userAverageRating) VALUES (?,?,?)";
+    private static final String SQL_DELETE = "DELETE FROM users WHERE userId = ?";
+
     public static UserDaoImpl getInstance() {
         return INSTANCE;
     }
 
     @Override
-    public Optional<User> getById(long id) {
+    public Optional<User> findById(long id) {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
-            String sql = "SELECT userId, userName, userAverageRating FROM users WHERE userId = ?";
+            String sql = SQL_FIND_BY_ID;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
-                return Optional.of(new User(resultSet.getLong("userId"),
-                        resultSet.getString("userName"),
-                        resultSet.getInt("userAverageRating"))) ;
+                return Optional.of(new User(resultSet.getLong(USER_ID),
+                        resultSet.getString(USER_NAME),
+                        resultSet.getInt(USER_RATING))) ;
             }
 
 
@@ -42,16 +53,16 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public String getPassByUserName(String username){
+    public String findPassByUserName(String username){
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
-            String sql = "SELECT userPass, userId FROM users WHERE userName = ?";
+            String sql = SQL_FIND_PASS_BY_USER_NAME;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();
             resultSet.next();
-            return resultSet.getString("userPass");
+            return resultSet.getString(USER_PASS);
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -63,7 +74,7 @@ public class UserDaoImpl implements UserDao {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()) {
             Connection connection = connectionWrapper.getConnection();
-            String sql = "INSERT INTO users (userName, userPass, userAverageRating) VALUES (?,?,?)";
+            String sql = SQL_SAVE;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, pass);
@@ -78,17 +89,17 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public long getIdByUsername(String username){
+    public long findIdByUsername(String username){
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
-            String sql = "SELECT FROM users userId WHERE username = ?";
+            String sql = SQL_FIND_BY_USER_NAME;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             resultSet.next();
-            return resultSet.getLong("userId");
+            return resultSet.getLong(USER_ID);
         }catch (SQLException e){
             e.printStackTrace();
         }
@@ -99,7 +110,7 @@ public class UserDaoImpl implements UserDao {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
-            String sql = "DELETE FROM users WHERE userId = ?";
+            String sql = SQL_DELETE;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setLong(1, id);
