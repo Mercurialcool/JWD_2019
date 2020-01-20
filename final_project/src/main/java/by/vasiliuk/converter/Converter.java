@@ -1,4 +1,5 @@
 package main.java.by.vasiliuk.converter;
 
-public class Converter {
+public interface Converter<T, U> {
+    T convert(U u);
 }

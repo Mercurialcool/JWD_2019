@@ -1,4 +1,7 @@
 package main.java.by.vasiliuk.pool;
 
-public class Pool {
+public interface Pool {
+    ConnectionWrapper getConnection();
+    boolean releaseConnection(ConnectionWrapper connection);
+    void close();
 }
