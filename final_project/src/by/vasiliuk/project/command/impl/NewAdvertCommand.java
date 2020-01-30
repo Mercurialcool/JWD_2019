@@ -1,21 +1,23 @@
-package main.java.by.vasiliuk.command.impl;
+package by.vasiliuk.project.command.impl;
 
-import main.java.by.vasiliuk.command.Command;
-import main.java.by.vasiliuk.service.AdvertService;
+import by.vasiliuk.project.command.Command;
+import by.vasiliuk.project.command.CommandException;
+import by.vasiliuk.project.service.impl.AdvertService;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static by.vasiliuk.project.command.JspProvider.RETURN_PAGE;
+import static by.vasiliuk.project.command.TitleProvider.TEXT;
+import static by.vasiliuk.project.command.TitleProvider.TITLE;
+
 public class NewAdvertCommand implements Command {
 
-    private static final String RETURN_PAGE = "some_page.jsp";
-    private static final String TITLE = "title";
-    private static final String TEXT = "text";
     //private static final long USER_ID = ;
 
 
 
     @Override
-    public String execute(HttpServletRequest request) {
+    public String execute(HttpServletRequest request) throws CommandException {
         String title = request.getParameter(TITLE);
         String text = request.getParameter(TEXT);
         //long userId = request.getParameter(USER_ID);

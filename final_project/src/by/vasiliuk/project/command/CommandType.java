@@ -1,8 +1,8 @@
-package main.java.by.vasiliuk.command;
+package by.vasiliuk.project.command;
 
-import main.java.by.vasiliuk.command.impl.GetAllAdvertsCommand;
-import main.java.by.vasiliuk.command.impl.LoginCommand;
-import main.java.by.vasiliuk.command.impl.NewAdvertCommand;
+import by.vasiliuk.project.command.impl.GetAllAdvertsCommand;
+import by.vasiliuk.project.command.impl.LoginCommand;
+import by.vasiliuk.project.command.impl.NewAdvertCommand;
 
 public enum CommandType {
     ALL_ADVERTS(new GetAllAdvertsCommand()),

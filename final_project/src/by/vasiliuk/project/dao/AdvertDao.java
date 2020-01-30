@@ -1,13 +1,13 @@
-package main.java.by.vasiliuk.dao;
+package by.vasiliuk.project.dao;
 
-import main.java.by.vasiliuk.model.Advert;
+import by.vasiliuk.project.model.Advert;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface AdvertDao {
-    List<Advert> findAll();
+    List<Advert> findAll() throws DaoException;
     Optional<Advert> findById(long id);
-    void save(String advertTitle, String advertText, long userId);
-    List<Advert> findBySectionId(long id);
+    void save(String advertTitle, String advertText, long userId) throws DaoException;
+    List<Advert> findBySectionId(long id) throws DaoException;
 }

@@ -1,9 +1,10 @@
-package main.java.by.vasiliuk.service;
+package by.vasiliuk.project.service.impl;
 
-import main.java.by.vasiliuk.dao.DaoException;
-import main.java.by.vasiliuk.dao.UserDao;
-import main.java.by.vasiliuk.dao.impl.UserDaoImpl;
-import main.java.by.vasiliuk.model.User;
+import by.vasiliuk.project.dao.UserDao;
+import by.vasiliuk.project.model.User;
+import by.vasiliuk.project.dao.DaoException;
+import by.vasiliuk.project.dao.impl.UserDaoImpl;
+import by.vasiliuk.project.service.ServiceException;
 
 import java.util.Optional;
 
@@ -15,7 +16,7 @@ public class UserService {
         return INSTANCE;
     }
 
-    public String logInUser(String username) throws ServiceException{
+    public String logInUser(String username) throws ServiceException {
         UserDao userDao = UserDaoImpl.getInstance();
         try {
             return userDao.findPassByUserName(username);
@@ -51,7 +52,7 @@ public class UserService {
         }
     }
 
-    public Optional<String> getUsernameById(long id)throws ServiceException{
+    public Optional<String> findUsernameById(long id)throws ServiceException{
         UserDao userDao = UserDaoImpl.getInstance();
         Optional<User> user = null;
         try {

@@ -1,4 +1,4 @@
-package main.java.by.vasiliuk.model;
+package by.vasiliuk.project.model;
 
 import java.util.Objects;
 

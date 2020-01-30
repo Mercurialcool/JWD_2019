@@ -1,10 +1,10 @@
-package main.java.by.vasiliuk.dao.impl;
+package by.vasiliuk.project.dao.impl;
 
-import main.java.by.vasiliuk.dao.DaoException;
-import main.java.by.vasiliuk.dao.UserDao;
-import main.java.by.vasiliuk.model.User;
-import main.java.by.vasiliuk.pool.ConnectionPool;
-import main.java.by.vasiliuk.pool.ConnectionWrapper;
+import by.vasiliuk.project.dao.UserDao;
+import by.vasiliuk.project.model.User;
+import by.vasiliuk.project.dao.DaoException;
+import by.vasiliuk.project.pool.ConnectionPool;
+import by.vasiliuk.project.pool.ConnectionWrapper;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,20 +12,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
+import static by.vasiliuk.project.dao.DaoProvider.*;
+
 public class UserDaoImpl implements UserDao {
 
     private static final UserDaoImpl INSTANCE = new UserDaoImpl();
-
-    private static final String USER_ID = "userId";
-    private static final String USER_NAME = "userName";
-    private static final String USER_RATING = "userAverageRating";
-    private static final String USER_PASS = "userPass";
-
-    private static final String SQL_FIND_BY_ID = "SELECT userId, userName, userAverageRating FROM users WHERE userId = ?";
-    private static final String SQL_FIND_PASS_BY_USER_NAME = "SELECT userPass, userId FROM users WHERE userName = ?";
-    private static final String SQL_FIND_BY_USER_NAME = "SELECT FROM users userId WHERE username = ?";
-    private static final String SQL_SAVE = "INSERT INTO users (userName, userPass, userAverageRating) VALUES (?,?,?)";
-    private static final String SQL_DELETE = "DELETE FROM users WHERE userId = ?";
 
     public static UserDaoImpl getInstance() {
         return INSTANCE;
@@ -37,7 +28,7 @@ public class UserDaoImpl implements UserDao {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
-            String sql = SQL_FIND_BY_ID;
+            String sql = SQL_FIND_USER_BY_ID;
              preparedStatement = connectionWrapper.prepareStatement(sql);
             preparedStatement.setLong(1, id);
              resultSet = preparedStatement.executeQuery();
@@ -86,7 +77,7 @@ public class UserDaoImpl implements UserDao {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()) {
             Connection connection = connectionWrapper.getConnection();
-            String sql = SQL_SAVE;
+            String sql = SQL_USER_SAVE;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, pass);
@@ -122,7 +113,7 @@ public class UserDaoImpl implements UserDao {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
-            String sql = SQL_DELETE;
+            String sql = SQL_USER_DELETE;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setLong(1, id);

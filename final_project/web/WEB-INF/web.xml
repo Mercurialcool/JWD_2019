@@ -12,7 +12,7 @@
 
     <servlet>
         <servlet-name>ad-list-page</servlet-name>
-        <servlet-class>main.java.by.vasiliuk.servlet.AdListPageServlet</servlet-class>
+        <servlet-class>by.vasiliuk.project.servlet.MainServlet</servlet-class>
     </servlet>
 
     <servlet>

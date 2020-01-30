@@ -1,7 +1,8 @@
-package main.java.by.vasiliuk.servlet;
+package by.vasiliuk.project.servlet;
 
-import main.java.by.vasiliuk.command.Command;
-import main.java.by.vasiliuk.command.CommandProvider;
+import by.vasiliuk.project.command.Command;
+import by.vasiliuk.project.command.CommandException;
+import by.vasiliuk.project.command.CommandProvider;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,16 +12,17 @@ import java.io.IOException;
 
 public class MainServlet extends HttpServlet {
 
-
-
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
      String page = null;
 String commandStr = request.getParameter("command");
         Command command = CommandProvider.getCommand(commandStr);
-        page = command.execute(request);
+        try {
+            page = command.execute(request);
+        } catch (CommandException e) {
+            response.sendError(500, "error message");
+        }
         request.getRequestDispatcher(page).forward(request, response);
     }
 }

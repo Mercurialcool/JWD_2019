@@ -1,4 +1,4 @@
-package main.java.by.vasiliuk.model;
+package by.vasiliuk.project.model;
 
 import java.util.Objects;
 
@@ -64,13 +64,4 @@ public class Advert {
         return Objects.hash(id, text, title, userId);
     }
 
-    @Override
-    public String toString() {
-        return "Advert{" +
-                "id=" + id +
-                ", text='" + text + '\'' +
-                ", title='" + title + '\'' +
-                ", userId=" + userId +
-                '}';
-    }
 }

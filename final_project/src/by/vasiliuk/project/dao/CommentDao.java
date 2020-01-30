@@ -1,6 +1,6 @@
-package main.java.by.vasiliuk.dao;
+package by.vasiliuk.project.dao;
 
-import main.java.by.vasiliuk.model.Comment;
+import by.vasiliuk.project.model.Comment;
 
 import java.util.List;
 

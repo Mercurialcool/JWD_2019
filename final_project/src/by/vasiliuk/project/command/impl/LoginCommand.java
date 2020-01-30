@@ -1,21 +1,22 @@
-package main.java.by.vasiliuk.command.impl;
+package by.vasiliuk.project.command.impl;
 
 
-import main.java.by.vasiliuk.command.Command;
-import main.java.by.vasiliuk.service.ServiceException;
-import main.java.by.vasiliuk.service.UserService;
-import main.java.by.vasiliuk.service.HashUtil;
+import by.vasiliuk.project.command.Command;
+import by.vasiliuk.project.command.CommandException;
+import by.vasiliuk.project.service.impl.UserService;
+import by.vasiliuk.project.service.ServiceException;
+import by.vasiliuk.project.util.HashUtil;
 
 import javax.servlet.http.HttpServletRequest;
+;
+import static by.vasiliuk.project.command.JspProvider.LOGIN_PAGE;
+import static by.vasiliuk.project.command.TitleProvider.NAME;
+import static by.vasiliuk.project.command.TitleProvider.PASSWORD;
 
 public class LoginCommand implements Command {
 
-    private static final String LOGIN_PAGE = "some_page.jsp";
-    private static final String NAME = "name";
-    private static final String PASSWORD = "password";
-
     @Override
-    public String execute(HttpServletRequest request) {
+    public String execute(HttpServletRequest request)throws CommandException {
 
          String page = LOGIN_PAGE;
          String username = request.getParameter(NAME);

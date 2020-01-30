@@ -1,4 +1,4 @@
-package main.java.by.vasiliuk.service;
+package by.vasiliuk.project.service;
 
 public class ServiceException extends Exception {
     public ServiceException() {

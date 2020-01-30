@@ -1,24 +1,24 @@
-package main.java.by.vasiliuk.command.exception;
+package by.vasiliuk.project.command;
 
-public class AdvertNotFoundException extends Exception {
-    public AdvertNotFoundException() {
+public class CommandException extends Exception {
+    public CommandException() {
         super();
     }
 
-    public AdvertNotFoundException(String message) {
+    public CommandException(String message) {
         super(message);
     }
 
-    public AdvertNotFoundException(String message, Throwable cause) {
+    public CommandException(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public AdvertNotFoundException(Throwable cause) {
+    public CommandException(Throwable cause) {
         super(cause);
     }
 
-    protected AdvertNotFoundException(String message, Throwable cause,
-                                      boolean enableSuppression, boolean writableStackTrace) {
+    protected CommandException(String message, Throwable cause,
+                               boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

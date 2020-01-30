@@ -1,6 +1,5 @@
-package main.java.by.vasiliuk.service;
+package by.vasiliuk.project.util;
 
-import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;

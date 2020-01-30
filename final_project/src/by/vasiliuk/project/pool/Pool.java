@@ -1,4 +1,4 @@
-package main.java.by.vasiliuk.pool;
+package by.vasiliuk.project.pool;
 
 public interface Pool {
     ConnectionWrapper getConnection();

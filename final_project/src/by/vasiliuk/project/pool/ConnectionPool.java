@@ -1,4 +1,4 @@
-package main.java.by.vasiliuk.pool;
+package by.vasiliuk.project.pool;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,13 +27,13 @@ public class ConnectionPool implements Pool{
 
     private ConnectionPool(){
         InputStream input;
-        Properties properties = new Properties();
-        try {
-            input = this.getClass().getClassLoader().getResourceAsStream(CONFIG_PROPERTIES);
-            properties.load(input);
-            String url = properties.getProperty(DB_HOST);
-            String user = properties.getProperty(DB_LOGIN);
-            String pass = properties.getProperty(DB_PASSWORD);
+               Properties properties = new Properties();
+            try {
+                input = this.getClass().getClassLoader().getResourceAsStream(CONFIG_PROPERTIES);
+                properties.load(input);
+                String url = properties.getProperty(DB_HOST);
+                String user = properties.getProperty(DB_LOGIN);
+                String pass = properties.getProperty(DB_PASSWORD);
 
             availableConnections = new ArrayBlockingQueue<>(Integer.
                     parseInt(properties.getProperty(CONNECTION_POOL_SIZE)));

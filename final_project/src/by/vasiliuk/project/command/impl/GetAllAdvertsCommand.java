@@ -1,37 +1,44 @@
-package main.java.by.vasiliuk.command.impl;
+package by.vasiliuk.project.command.impl;
 
-import main.java.by.vasiliuk.command.Command;
-import main.java.by.vasiliuk.converter.AdvertToConverter;
-import main.java.by.vasiliuk.dao.DaoException;
-import main.java.by.vasiliuk.dto.AdvertTo;
-import main.java.by.vasiliuk.model.Advert;
-import main.java.by.vasiliuk.service.AdvertService;
+import by.vasiliuk.project.command.Command;
+import by.vasiliuk.project.command.CommandException;
+import by.vasiliuk.project.converter.AdvertToConverter;
+import by.vasiliuk.project.model.Advert;
+import by.vasiliuk.project.service.ServiceException;
+import by.vasiliuk.project.service.impl.AdvertService;
+import by.vasiliuk.project.dao.DaoException;
+import by.vasiliuk.project.model.AdvertTo;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetAllAdvertsCommand implements Command {
+import static by.vasiliuk.project.command.JspProvider.RETURN_PAGE;
+import static by.vasiliuk.project.command.NameProvider.ADD_LIST;
 
-    private static final String ADD_LIST = "add_list";
-    private static final String RETURN_PAGE = "some_page.jsp";
+public class GetAllAdvertsCommand implements Command {
 
    // private List<AdvertTo> advertTos;
 
     @Override
-    public String execute(HttpServletRequest request) throws DaoException {
-        List<AdvertTo> advertList;
+    public String execute(HttpServletRequest request) throws CommandException {
         List<AdvertTo> advertTos;
 
-
-
-
         AdvertService advertService = AdvertService.getInstance();
-        List<Advert> adverts = advertService.getAllAds();
+        List<Advert> adverts = null;
+        try {
+            adverts = advertService.findAllAds();
+        } catch (DaoException | ServiceException e) {
+            throw new CommandException(e);
+        }
         AdvertToConverter advertToConverter = AdvertToConverter.getInstance();
         advertTos = new ArrayList<>();
         for(Advert advert : adverts){
-            advertTos.add(advertToConverter.convert(advert));
+            try {
+                advertTos.add(advertToConverter.convert(advert));
+            } catch (ServiceException e) {
+                throw new CommandException(e);
+            }
         }
         request.setAttribute(ADD_LIST, advertTos);
         return RETURN_PAGE;
