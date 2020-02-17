@@ -5,14 +5,15 @@ import by.vasiliuk.project.model.User;
 import by.vasiliuk.project.dao.DaoException;
 import by.vasiliuk.project.dao.impl.UserDaoImpl;
 import by.vasiliuk.project.service.ServiceException;
+import by.vasiliuk.project.service.UserService;
 
 import java.util.Optional;
 
-public class UserService {
+public class UserServiceImpl implements UserService {
 
-    private static final UserService INSTANCE = new UserService();
+    private static final UserServiceImpl INSTANCE = new UserServiceImpl();
 
-    public static UserService getInstance(){
+    public static UserServiceImpl getInstance(){
         return INSTANCE;
     }
 
@@ -34,10 +35,10 @@ public class UserService {
         }
     }
 
-    public void registerUser(String username, String pass, int averageRating)throws ServiceException{
+    public void registerUser(String username, String pass, String averageRating)throws ServiceException{
         UserDao userDao = UserDaoImpl.getInstance();
         try {
-            userDao.save(username, pass, averageRating);
+            userDao.save(username, pass, Integer.parseInt(averageRating));
         } catch (DaoException e) {
             throw new ServiceException(e);
         }

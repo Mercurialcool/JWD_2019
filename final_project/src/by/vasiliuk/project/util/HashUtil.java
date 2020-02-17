@@ -7,6 +7,7 @@ import javax.crypto.spec.PBEKeySpec;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
+import java.util.Base64;
 
 
 public class HashUtil {
@@ -16,14 +17,16 @@ public class HashUtil {
     private static final int DESIRED_KEY_LEN = 50;
 
     public static String hash(String password) {
-        byte[] salt = new byte[0];
+        byte[] salt;
+        String hashByteString = new String();
         try {
             salt = SecureRandom.getInstance("SHA1PRNG").generateSeed(SALT_LEN);
-            return Base64.encodeBase64String(salt) + "$" + hash(password, salt);
+            hashByteString =  Base64.getEncoder().encodeToString((salt + "$" + hash(password, salt)).getBytes());
         } catch (NoSuchAlgorithmException e) {
+            // log todo
             e.printStackTrace();
         }
-        return null;
+        return hashByteString;
     }
 
     public static boolean check(String pass, String hash){
@@ -32,21 +35,24 @@ public class HashUtil {
             throw new IllegalStateException(
                     "The stored password must have the form 'salt$hash'");
         }
-        String hashOfInput = hash(pass, Base64.decodeBase64(saltAndHash[0]));
-        return hashOfInput.equals(saltAndHash[1]);
+        String hashOfInput = hash(pass, Base64.getDecoder().decode(saltAndHash[0]));
+        boolean result = hashOfInput.equals(saltAndHash[1]);
+        return result;
     }
 
     private static String hash(String password, byte[] salt) {
         if (password == null || password.length() == 0)
             throw new IllegalArgumentException("Empty passwords are not supported.");
-        SecretKeyFactory f = null;
+        SecretKeyFactory keyFactory ;
+        String hashString = new String();
         try {
-            f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
-            SecretKey key = f.generateSecret(new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, DESIRED_KEY_LEN));
-            return Base64.encodeBase64String(key.getEncoded());
+            keyFactory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
+            SecretKey key = keyFactory.generateSecret(new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, DESIRED_KEY_LEN));
+            hashString =  Base64.getEncoder().encodeToString(key.getEncoded());
         } catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
             e.printStackTrace();
+            // log todo
         }
-        return null;
+        return hashString;
     }
 }

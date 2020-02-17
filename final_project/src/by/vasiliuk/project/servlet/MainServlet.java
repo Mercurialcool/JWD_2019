@@ -12,17 +12,31 @@ import java.io.IOException;
 
 public class MainServlet extends HttpServlet {
 
+    public static final String COMMAND = "command";
+
+    public MainServlet() {
+    }
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
-     String page = null;
-String commandStr = request.getParameter("command");
+        String page = null;
+        String commandStr = request.getParameter(COMMAND);
         Command command = CommandProvider.getCommand(commandStr);
         try {
             page = command.execute(request);
         } catch (CommandException e) {
-            response.sendError(500, "error message");
+            response.sendError(500, "error message: bad command " + e.getMessage());
         }
         request.getRequestDispatcher(page).forward(request, response);
+    }
+    @Override
+    public void destroy() {
+        super.destroy();
     }
 }

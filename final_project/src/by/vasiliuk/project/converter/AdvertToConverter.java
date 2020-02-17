@@ -2,7 +2,7 @@ package by.vasiliuk.project.converter;
 
 import by.vasiliuk.project.model.Advert;
 import by.vasiliuk.project.service.ServiceException;
-import by.vasiliuk.project.service.impl.UserService;
+import by.vasiliuk.project.service.impl.UserServiceImpl;
 import by.vasiliuk.project.model.AdvertTo;
 
 public class AdvertToConverter implements Converter<AdvertTo, Advert> {
@@ -15,8 +15,8 @@ public class AdvertToConverter implements Converter<AdvertTo, Advert> {
 
     @Override
     public AdvertTo convert(Advert advert) throws ServiceException {
-        UserService userService = UserService.getInstance();
-        String username = userService.findUsernameById(advert.getUserId()).orElse(null);
+        UserServiceImpl userServiceImpl = UserServiceImpl.getInstance();
+        String username = userServiceImpl.findUsernameById(advert.getUserId()).orElse(null);
         return new AdvertTo(advert.getId(), advert.getText(), advert.getTitle(), username);
     }
 }

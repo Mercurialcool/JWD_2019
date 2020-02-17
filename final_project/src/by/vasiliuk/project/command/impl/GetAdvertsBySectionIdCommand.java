@@ -2,12 +2,11 @@ package by.vasiliuk.project.command.impl;
 
 import by.vasiliuk.project.command.Command;
 import by.vasiliuk.project.service.ServiceException;
-import by.vasiliuk.project.service.impl.UserService;
+import by.vasiliuk.project.service.impl.UserServiceImpl;
 import by.vasiliuk.project.command.CommandException;
-import by.vasiliuk.project.dao.DaoException;
 import by.vasiliuk.project.model.Advert;
 import by.vasiliuk.project.model.AdvertTo;
-import by.vasiliuk.project.service.impl.AdvertService;
+import by.vasiliuk.project.service.impl.AdvertServiceImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -29,20 +28,16 @@ public class GetAdvertsBySectionIdCommand implements Command {
     public String execute(HttpServletRequest request) throws CommandException {
         List<AdvertTo> advertTos = new ArrayList<>();
 
-        AdvertService advertService = new AdvertService();
+        AdvertServiceImpl advertServiceImpl = new AdvertServiceImpl();
         //long id = ADVERTS_BY_SECTION;//todo
         List<Advert> adverts ;
         try {
-            try {
-                adverts = advertService.findBySectionId(id);
-            } catch (DaoException e) {
-                throw new CommandException(e);
-            }
+            adverts = advertServiceImpl.findBySectionId(id);
 
-            UserService userService = new UserService();
+            UserServiceImpl userServiceImpl = new UserServiceImpl();
         Optional<String> username;
         for(Advert advert : adverts){
-            username = userService.findUsernameById(advert.getUserId());
+            username = userServiceImpl.findUsernameById(advert.getUserId());
             if(username.isPresent()){
                 advertTos.add(new AdvertTo(advert.getId(), advert.getTitle(),
                         advert.getText(), username.get()));

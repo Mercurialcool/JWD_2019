@@ -14,6 +14,7 @@ import java.util.Optional;
 
 import static by.vasiliuk.project.dao.DaoProvider.*;
 
+
 public class UserDaoImpl implements UserDao {
 
     private static final UserDaoImpl INSTANCE = new UserDaoImpl();
@@ -56,24 +57,27 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public String findPassByUserName(String username){
+    public String findPassByUserName(String username) throws DaoException{
         ConnectionPool connectionPool = ConnectionPool.getInstance();
+        ResultSet resultSet = null;
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
-            Connection connection = connectionWrapper.getConnection();
-            String sql = SQL_FIND_PASS_BY_USER_NAME;
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            PreparedStatement preparedStatement = connectionWrapper.prepareStatement(SQL_FIND_PASS_BY_USER_NAME);
             preparedStatement.setString(1, username);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            resultSet = preparedStatement.executeQuery();
             resultSet.next();
             return resultSet.getString(USER_PASS);
         } catch (SQLException e){
-            e.printStackTrace();
+           throw new DaoException(e);
+        } finally {
+            close(resultSet);
+            // todo close statement
+
         }
-        return null;
     }
 
     @Override
-    public boolean save(String username, String pass, int averageRating) {
+    public boolean save(String username, String pass, int averageRating) throws DaoException {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()) {
             Connection connection = connectionWrapper.getConnection();
@@ -92,7 +96,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public long findIdByUsername(String username){
+    public long findIdByUsername(String username) throws DaoException {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         try(ConnectionWrapper connectionWrapper = connectionPool.getConnection()){
             Connection connection = connectionWrapper.getConnection();
@@ -104,9 +108,8 @@ public class UserDaoImpl implements UserDao {
             resultSet.next();
             return resultSet.getLong(USER_ID);
         }catch (SQLException e){
-            e.printStackTrace();
+            throw new DaoException(e);
         }
-        return 0;
     }
 
     public void delete(long id){

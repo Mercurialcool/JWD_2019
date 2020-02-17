@@ -5,7 +5,7 @@ import by.vasiliuk.project.model.Advert;
 import java.util.List;
 import java.util.Optional;
 
-public interface AdvertDao {
+public interface AdvertDao extends BaseDao {
     List<Advert> findAll() throws DaoException;
     Optional<Advert> findById(long id);
     void save(String advertTitle, String advertText, long userId) throws DaoException;
