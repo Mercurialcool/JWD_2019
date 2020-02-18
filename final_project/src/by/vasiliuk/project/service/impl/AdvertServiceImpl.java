@@ -4,12 +4,13 @@ import by.vasiliuk.project.dao.impl.AdvertDaoImpl;
 import by.vasiliuk.project.dao.AdvertDao;
 import by.vasiliuk.project.dao.DaoException;
 import by.vasiliuk.project.model.Advert;
+import by.vasiliuk.project.service.AdvertService;
 import by.vasiliuk.project.service.ServiceException;
 
 import java.util.List;
 import java.util.Optional;
 
-public class AdvertServiceImpl {
+public class AdvertServiceImpl implements AdvertService {
 
     private static final AdvertServiceImpl INSTANCE = new AdvertServiceImpl();
 
@@ -51,7 +52,7 @@ public class AdvertServiceImpl {
         }
     }
 
-    public void saveAdvert(String title, String text, long userId)throws ServiceException{
+    public void saveAdvert(String title, String text, long userId) throws ServiceException{
         AdvertDao advertDao = null;
         try {
             advertDao = AdvertDaoImpl.getInstance();
