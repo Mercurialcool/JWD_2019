@@ -51,7 +51,7 @@ public class ConnectionPool implements Pool{
     }
 
     public static ConnectionPool getInstance(){
-        if (!created.get()) {//todo make getAbdSet sepatarely
+        if (!created.get()) {//todo make getAbvSet sepatarely
             try {
                 lock.lock();
                 if (pool == null) {
